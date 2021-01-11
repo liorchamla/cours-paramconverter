@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ post.title }}</h1>
+
+    <p>{{ post.content }}</p>
+
+    <a href="{{ path('post_index') }}">Revenir à la liste</a>
+{% endblock %}
